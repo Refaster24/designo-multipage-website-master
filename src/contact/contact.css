@@ -1,0 +1,26 @@
+form div{
+    position: relative;
+}
+
+form input{
+    position: relative;
+    z-index: 3;
+}
+
+form span{
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+form span::after{
+    content: '';
+    display:inline-block;
+    background-image: url('../assets/contact/desktop/icon-error.svg');
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    position: relative;
+    top: 4px;
+}

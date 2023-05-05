@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Jost',sans-serif
+}
+
+button{
+    transition: all ease-in-out 400ms;
+    -webkit-transition: all ease-in-out 400ms;
+    -moz-transition: all ease-in-out 400ms;
+    -ms-transition: all ease-in-out 400ms;
+    -o-transition: all ease-in-out 400ms;
+}
+
+#home{
+    background-image: url(./assets/home/desktop/bg-pattern-hero-home.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right top;
+}
+
+#home-main{
+    background-image: url(./assets/shared/desktop/bg-pattern-leaf.svg);
+    background-repeat: no-repeat;
+    background-size: 80vw;
+    background-position:190% bottom;
+}
+
+#home-main #webDesign {
+    padding-block: 14.7em;
+}
+
+#webDesign,
+#appDesign,
+#graphicDesign {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#webDesign{
+    background-image: url(./assets/home/desktop/image-web-design-large.jpg);
+}
+
+#appDesign{
+    background-image: url(./assets/home/desktop/image-app-design.jpg);
+}
+
+#graphicDesign{
+    background-image: url(./assets/home/desktop/image-graphic-design.jpg);
+}
+
+#webDesign span::after,
+#appDesign span::after,
+#graphicDesign span::after{
+    content:url(./assets/shared/desktop/icon-right-arrow.svg);
+}
+
+@media not all and (min-width : 1024px) {
+    #home-main{
+        background-image: url(.);
+    }
+    #webDesign{
+        background-image: url(./assets/home/desktop/image-web-design-small.jpg);
+    }
+}
+
+.location-links-img{
+    background-image: url(./assets/shared/desktop/bg-pattern-small-circle.svg);
+}
+
+#design-section{
+    background-image: url(./assets/web-design/desktop/bg-pattern-intro-web.svg);
+    background-size: 45em;
+}
